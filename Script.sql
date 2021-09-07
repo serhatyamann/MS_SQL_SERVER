@@ -51,7 +51,15 @@ CREATE TABLE tbUserLikedTitles(
 	SubTitleID int NOT NULL,
 	FOREIGN KEY (UserID) REFERENCES tbUsers (ID),
 	FOREIGN KEY (TitleID) REFERENCES tbTitles (ID),
-	FOREIGN KEY (SubTitleID) REFERENCES tbSubTitles (ID),
+	FOREIGN KEY (SubTitleID) REFERENCES tbSubTitles (ID)
+);
+
+CREATE TABLE tbAuthorsOfArticles(
+	ID int Identity(1,1) PRIMARY KEY,
+	AuthorID int NOT NULL,
+	ArticleID int NOT NULL,
+	FOREIGN KEY (AuthorID) REFERENCES tbAuthors (ID),
+	FOREIGN KEY (ArticleID) REFERENCES tbArticles (ID)
 );
 
 
