@@ -13,4 +13,5 @@ BEGIN
 	JOIN tbOrderItems oi on o.OrderID = oi.OrderID
 	WHERE c.customer_id = @ID
 	GROUP BY oi.OrderID, c.First_Name +SPACE(1)+ c.Last_Name
+	ORDER BY oi.OrderID ASC
 END
