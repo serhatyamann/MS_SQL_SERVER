@@ -6,8 +6,8 @@ CREATE PROCEDURE Sp_GetTotalSpentOfACustomerByID @ID INT
 AS
 BEGIN
 	SELECT c.First_Name +SPACE(1)+ c.Last_Name as [Full Name],
-		   oi.OrderID,
-		   SUM(Quantity * ListPrice * (1-Discount)) as [Total Spent]
+	       oi.OrderID,
+	       SUM(Quantity * ListPrice * (1-Discount)) as [Total Spent]
 	FROM tbCustomers c
 	JOIN tbOrders o on c.CustomerID = o.CustomerID
 	JOIN tbOrderItems oi on o.OrderID = oi.OrderID
