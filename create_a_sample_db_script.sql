@@ -6,6 +6,9 @@ GO
 
 USE BlogDB
 
+GO
+
+BEGIN
 CREATE TABLE tbUsers ( 
 	ID int Identity(1,1) PRIMARY KEY,
 	FullName nvarchar(50) NOT NULL,
@@ -61,6 +64,6 @@ CREATE TABLE tbAuthorsOfArticles(
 	FOREIGN KEY (AuthorID) REFERENCES tbAuthors (ID),
 	FOREIGN KEY (ArticleID) REFERENCES tbArticles (ID)
 );
-
+END
 
 
