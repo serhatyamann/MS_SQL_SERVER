@@ -5,7 +5,7 @@ GO
 CREATE PROCEDURE Sp_GetStaffInfoByID @ID INT
 AS
 BEGIN
-	SELECT First_Name+' '+Last_Name) AS [Full Name],
+	SELECT First_Name+' '+Last_Name AS [Full Name],
 	       Phone,
 	       Email 
 	FROM tbStaffs
