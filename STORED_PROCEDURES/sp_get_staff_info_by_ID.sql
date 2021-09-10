@@ -11,5 +11,3 @@ BEGIN
 	FROM tbStaffs
 	WHERE ID = @ID
 END
-
-GO
