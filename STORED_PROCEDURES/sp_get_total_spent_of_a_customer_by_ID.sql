@@ -9,7 +9,7 @@ BEGIN
 		   oi.OrderID,
 		   SUM(Quantity * ListPrice * (1-Discount)) as [Total Spent]
 	FROM tbCustomers c
-	JOIN tbOrders o ON c.CustomerID = o.CustomerID
+	JOIN tbOrders o on c.CustomerID = o.CustomerID
 	JOIN tbOrderItems oi on o.OrderID = oi.OrderID
 	WHERE c.CustomerID = @ID
 	GROUP BY oi.OrderID, c.First_Name +SPACE(1)+ c.Last_Name
