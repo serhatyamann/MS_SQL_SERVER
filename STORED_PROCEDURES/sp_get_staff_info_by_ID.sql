@@ -11,9 +11,8 @@ BEGIN
 	FROM staffs
 	WHERE staff_id = @ID
 END
-
 GO
 
 --TEST
 
-EXECUTE Sp_GetStaffInfoByID @ID=16
+EXEC Sp_GetStaffInfoByID @ID=16
