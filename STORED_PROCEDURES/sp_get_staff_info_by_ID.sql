@@ -11,3 +11,9 @@ BEGIN
 	FROM tbStaffs
 	WHERE ID = @ID
 END
+
+GO
+
+--TEST
+
+EXECUTE Sp_GetStaffInfoByID @ID=16
