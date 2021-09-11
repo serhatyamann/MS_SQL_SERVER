@@ -64,6 +64,7 @@ CREATE TABLE tbAuthorsOfArticles(
 	FOREIGN KEY (AuthorID) REFERENCES tbAuthors (ID),
 	FOREIGN KEY (ArticleID) REFERENCES tbArticles (ID)
 );
+
 END
 
 
