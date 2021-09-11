@@ -1,5 +1,5 @@
 IF OBJECT_ID('Sp_UpdateStoreInfoByStoreID','P') IS NOT NULL
-    DROP PROCEDURE Sp_UpdateStoreInfo
+    DROP PROCEDURE Sp_UpdateStoreInfoByStoreID
 GO
 
 CREATE PROCEDURE Sp_UpdateStoreInfoByStoreID (
