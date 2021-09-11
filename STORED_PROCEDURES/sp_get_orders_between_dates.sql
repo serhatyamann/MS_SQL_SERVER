@@ -2,7 +2,7 @@ IF OBJECT_ID('Sp_OrdersBetweenDates','P') IS NOT NULL
     DROP PROCEDURE Sp_OrdersBetweenDates
 GO
 
-CREATE PROCEDURE Sp_OrdersBetweenDates @beginDate date, @@endDate date
+CREATE PROCEDURE Sp_OrdersBetweenDates @beginDate date, @endDate date
 AS
 BEGIN
 	SELECT * FROM tbOrders
