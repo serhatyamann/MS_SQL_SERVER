@@ -1,4 +1,4 @@
---A simple function that calculates a customer's total spend.
+--A simple SQL scalar function that calculates a customer's total spend.
 
 IF OBJECT_ID('Fn_GetTotalSpendOfACustomerByID','FN') IS NOT NULL
     DROP FUNCTION Fn_GetTotalSpendOfACustomerByID
