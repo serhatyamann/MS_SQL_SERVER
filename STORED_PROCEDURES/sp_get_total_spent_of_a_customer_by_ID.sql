@@ -15,3 +15,9 @@ BEGIN
 	GROUP BY oi.OrderID, c.First_Name +SPACE(1)+ c.Last_Name
 	ORDER BY oi.OrderID ASC
 END
+
+GO
+
+--TEST
+
+execute Sp_GetTotalSpentOfACustomerByID @ID=2
