@@ -1,3 +1,5 @@
+--A simple function that returns a table(row) by ID.
+
 IF OBJECT_ID('Fn_GetStaffInfoByID','IF') IS NOT NULL
     DROP FUNCTION Fn_GetStaffInfoByID
 GO
