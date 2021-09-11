@@ -20,4 +20,4 @@ GO
 
 --TEST
 
-execute Sp_GetTotalSpentOfACustomerByID @ID=2
+EXEC Sp_GetTotalSpentOfACustomerByID @ID=2
