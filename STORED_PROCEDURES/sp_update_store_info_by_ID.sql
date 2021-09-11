@@ -29,4 +29,4 @@ GO
 
 --TEST
 
-EXEC Sp_UpdateStoreInfoByStoreID 3,'test','4545455','TEST@gmail.com','test','test','test','test'
+EXEC Sp_UpdateStoreInfoByStoreID 3,'test','4545455','test@gmail.com','test','test','test','test'
