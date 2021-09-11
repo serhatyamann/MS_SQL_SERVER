@@ -2,6 +2,8 @@ IF OBJECT_ID('Sp_InsertStaff','P') IS NOT NULL
     DROP PROCEDURE Sp_InsertStaff
 GO
 
+--Here staff_id performs an auto-increment as a primary key which means we don't need to add it to this query.
+
 CREATE PROCEDURE Sp_InsertStaff (
 	@first_name NVARCHAR(50),
 	@last_name NVARCHAR(50),
@@ -21,4 +23,4 @@ GO
 
 --TEST
 
-EXECUTE Sp_InsertStaff 'Serhat','Yaman','test@gmail.com','(500) 222-3344',1,1,2
+EXEC Sp_InsertStaff 'Serhat','Yaman','test@gmail.com','(500) 222-3344',1,1,2
