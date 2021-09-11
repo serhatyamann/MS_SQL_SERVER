@@ -3,13 +3,13 @@ IF OBJECT_ID('Sp_InsertStaff','P') IS NOT NULL
 GO
 
 CREATE PROCEDURE Sp_InsertStaff (
-	@first_name nvarchar(50),
-	@last_name nvarchar(50),
-	@email nvarchar(250),
-	@phone nvarchar(20),
-	@active tinyint,
-	@store_id int,
-	@manager_id int
+	@first_name NVARCHAR(50),
+	@last_name NVARCHAR(50),
+	@email NVARCHAR(250),
+	@phone NVARCHAR(20),
+	@active TINYINT,
+	@store_id INT,
+	@manager_id INT
 )
 AS
 BEGIN
