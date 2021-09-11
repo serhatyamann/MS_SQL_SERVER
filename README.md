@@ -7,5 +7,8 @@
 
 > My stored procedure samples are coded for "BikeStores" sample database. You can find its creation scripts at https://www.sqlservertutorial.net/sql-server-sample-database/
 
+### [Functions](https://github.com/serhatyamann/MS_SQL_SERVER/tree/main/FUNCTIONS)
+
+#### SQL Server function is a code snippet that can be executed on SQL Server. 
 
 
