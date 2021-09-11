@@ -5,7 +5,7 @@
 
 #### SQL Server stored procedure is a batch of statements grouped as a logical unit and stored in the database. The stored procedure accepts the parameters and executes the T-SQL statements in the procedure, returns the result set if any. Stored procedures can be reused over and over again. So if you have an SQL query that you write over and over again, save it as a stored procedure, and then just call it to execute it.
 
-> My stored procedures samples are coded for a BikeStores sample database. You can find its creation scripts at https://www.sqlservertutorial.net/sql-server-sample-database/
+> My stored procedures samples are coded for "BikeStores" sample database. You can find its creation scripts at https://www.sqlservertutorial.net/sql-server-sample-database/
 
 
 
