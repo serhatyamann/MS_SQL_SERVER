@@ -5,8 +5,8 @@ GO
 CREATE PROCEDURE Sp_OrdersBetweenDates @beginDate date, @endDate date
 AS
 BEGIN
-	SELECT * FROM tbOrders
-	WHERE OrderDate BETWEEN @beginDate and @@endDate
+	SELECT * FROM orders
+	WHERE order_date BETWEEN @beginDate and @@endDate
 END
 
 GO
