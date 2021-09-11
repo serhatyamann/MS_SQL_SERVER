@@ -8,9 +8,8 @@ BEGIN
 	SELECT * FROM orders
 	WHERE order_date BETWEEN @beginDate and @@endDate
 END
-
 GO
 
 --TEST
 
-EXECUTE Sp_OrdersBetweenDates '2016/01/01','2016/01/09'
+EXEC Sp_OrdersBetweenDates '2016/01/01','2016/01/09'
