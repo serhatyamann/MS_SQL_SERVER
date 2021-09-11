@@ -10,7 +10,7 @@
 ### [Functions](https://github.com/serhatyamann/MS_SQL_SERVER/tree/main/FUNCTIONS)
 
 #### SQL server functions are sets of SQL statements that execute a specific task. Their main use is in allowing common tasks to be easily replicated. The use of SQL server functions is similar to that of functions in mathematics, in that they correlate a series on inputs to a series of outputs. SQL Server supports two types of functions - user-defined and system.
-##### 1 - User-Defined function: User-defined functions are create by a user.
+##### 1 - User Defined function: User-defined functions are create by a user.
 ##### 2 - System Defined Function: System functions are built-in database functions. 
 
 
