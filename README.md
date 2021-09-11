@@ -13,7 +13,7 @@
 ##### 1 - User Defined function: User-defined functions are create by a user.
 ##### 2 - System Defined Function: System functions are built-in database functions. 
 
-### [Triggers](https://github.com/serhatyamann/MS_SQL_SERVER/tree/main/FUNCTIONS)
+### [Triggers](https://github.com/serhatyamann/MS_SQL_SERVER/tree/main/)
 
 #### A trigger is a special kind of Stored Procedure or stored program that is automatically fired or executed when some event (insert, delete and update) occurs.
 
