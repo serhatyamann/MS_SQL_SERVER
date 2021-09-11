@@ -10,9 +10,8 @@
 ### [Functions](https://github.com/serhatyamann/MS_SQL_SERVER/tree/main/FUNCTIONS)
 
 #### SQL Server function is a code snippet that can be executed on SQL Server. 
-#### QL Server supports two types of functions - user-defined and system.
-User-Defined function: User-defined functions are create by a user.
- 
-System Defined Function: System functions are built-in database functions. 
+#### SQL Server supports two types of functions - user-defined and system.
+##### 1 - User-Defined function: User-defined functions are create by a user.
+##### 2 - System Defined Function: System functions are built-in database functions. 
 
 
