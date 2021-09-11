@@ -9,7 +9,7 @@ CREATE PROCEDURE Sp_UpdateStoreInfoByStoreID (
 	@email NVARCHAR(255),
 	@street NVARCHAR(255),
 	@city NVARCHAR(255),
-	@state NVARCHAR(10),
+	@cState NVARCHAR(10),
 	@zip_code NVARCHAR(5)
 )
 AS
@@ -21,7 +21,7 @@ BEGIN
 	email = @email,
 	street = @street,
 	city = @city,
-	state = @state,
+	cState = @cState,
 	zip_code = @zip_code
 	WHERE store_id = @store_id
 END
