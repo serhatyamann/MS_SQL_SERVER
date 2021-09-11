@@ -1,8 +1,8 @@
-IF OBJECT_ID('Sp_GetTotalSpentOfACustomerByID','P') IS NOT NULL
-    DROP PROCEDURE Sp_GetTotalSpentOfACustomerByID
+IF OBJECT_ID('Sp_GetTotalSpendOfACustomerByID','P') IS NOT NULL
+    DROP PROCEDURE Sp_GetTotalSpendOfACustomerByID
 GO
 
-CREATE PROCEDURE Sp_GetTotalSpentOfACustomerByID @ID INT
+CREATE PROCEDURE Sp_GetTotalSpendOfACustomerByID @ID INT
 AS
 BEGIN
 	SELECT c.first_name +SPACE(1)+ c.last_name as [Full Name],
@@ -19,4 +19,4 @@ GO
 
 --TEST
 
-EXEC Sp_GetTotalSpentOfACustomerByID @ID=2
+EXEC Sp_GetTotalSpendOfACustomerByID @ID=2
