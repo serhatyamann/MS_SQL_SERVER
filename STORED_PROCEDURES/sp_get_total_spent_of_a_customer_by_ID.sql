@@ -15,7 +15,6 @@ BEGIN
 	GROUP BY oi.order_id, c.first_name +SPACE(1)+ c.last_name
 	ORDER BY oi.order_id ASC
 END
-
 GO
 
 --TEST
