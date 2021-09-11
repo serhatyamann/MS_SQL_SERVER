@@ -1,10 +1,10 @@
 --A simple function that calculates a customer's total spend.
 
-IF OBJECT_ID('Fun_GetTotalSpendOfACustomerByID','FN') IS NOT NULL
-    DROP FUNCTION Fun_GetTotalSpendOfACustomerByID
+IF OBJECT_ID('Fn_GetTotalSpendOfACustomerByID','FN') IS NOT NULL
+    DROP FUNCTION Fn_GetTotalSpendOfACustomerByID
 GO
 
-CREATE FUNCTION Fun_GetTotalSpendOfACustomerByID (@ID INT)  
+CREATE FUNCTION Fn_GetTotalSpendOfACustomerByID (@ID INT)  
 RETURNS FLOAT  
 AS  
 BEGIN 
@@ -18,4 +18,4 @@ GO
 
 --TEST
 
-print dbo.Fun_GetTotalSpendOfACustomerByID (5)
+print dbo.Fn_GetTotalSpendOfACustomerByID (5)
