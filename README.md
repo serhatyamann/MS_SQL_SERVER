@@ -3,4 +3,8 @@
 
 ### Stored Procedures
 
+#### SQL Server stored procedure is a batch of statements grouped as a logical unit and stored in the database. The stored procedure accepts the parameters and executes the T-SQL statements in the procedure, returns the result set if any.
+
+
+
 
