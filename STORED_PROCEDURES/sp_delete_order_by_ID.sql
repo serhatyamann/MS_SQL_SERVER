@@ -1,0 +1,16 @@
+IF OBJECT_ID('Sp_DeleteOrderByID','P') IS NOT NULL
+    DROP PROCEDURE Sp_DeleteOrderByID
+GO
+
+CREATE PROCEDURE Sp_DeleteOrderByID @ID INT
+AS
+BEGIN
+	DELETE 
+	FROM orders
+	WHERE order_id = @ID
+END
+GO
+
+--TEST
+
+EXEC Sp_DeleteOrderByID 4
