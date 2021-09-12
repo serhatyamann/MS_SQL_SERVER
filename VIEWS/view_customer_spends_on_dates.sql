@@ -13,16 +13,17 @@ FROM customers c
 JOIN orders o on o.customer_id = c.customer_id
 JOIN order_items oi on oi.order_id = o.order_id
 GROUP BY order_date,
-		 c.customer_id,
-		 first_name,
-		 last_name
+	 c.customer_id,
+	 first_name,
+	 last_name
 GO
 
 --TEST
 
 SELECT * 
 FROM view_Customer_Spends_On_Dates
-ORDER BY customer_id, order_date ASC
+ORDER BY customer_id, 
+         order_date ASC
 
 GO
 
@@ -30,4 +31,5 @@ GO
 
 SELECT * 
 FROM view_Customer_Spends_On_Dates
-ORDER BY customer_id ASC, [Total Sale] ASC
+ORDER BY customer_id ASC, 
+         [Total Sale] DESC
