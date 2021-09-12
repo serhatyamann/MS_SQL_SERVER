@@ -14,4 +14,5 @@ GO
 
 --TEST
 
-SELECT * FROM view_Daily_Sales
+SELECT * FROM Vw_Daily_Sales
+ORDER BY [Total Sale] DESC
