@@ -8,7 +8,7 @@ CREATE FUNCTION Fn_GetStaffInfoByID (@staff_id INT)
 RETURNS TABLE 
 RETURN 
 (
-	SELECT* FROM staffs
+	SELECT * FROM staffs
 	WHERE staff_id = @staff_id
 )  
 GO
