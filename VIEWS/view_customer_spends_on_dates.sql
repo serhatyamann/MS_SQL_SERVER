@@ -5,10 +5,10 @@ GO
 CREATE VIEW view_Customer_Spends_On_Dates
 AS
 SELECT c.customer_id,
-	   order_date,
-	   first_name,
-	   last_name,
-	   SUM(quantity * list_price * (1-discount)) as [Total Sale]
+       order_date,
+       first_name,
+       last_name,
+       SUM(quantity * list_price * (1-discount)) as [Total Sale]
 FROM customers c
 JOIN orders o on o.customer_id = c.customer_id
 JOIN order_items oi on oi.order_id = o.order_id
