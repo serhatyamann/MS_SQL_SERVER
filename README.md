@@ -20,4 +20,8 @@ If you write a trigger for an insert operation on a table, after firing the trig
  
 Similarly, if you write a trigger for a delete operation on a table, it creates a table in memory named “DELETED” and then deletes the row.
 
+### [Views](https://github.com/serhatyamann/MS_SQL_SERVER/tree/main/VIEWS)
+
+#### Views are used to implement the security mechanism in SQL Server. Views are generally used to restrict the user from viewing certain columns and rows. Views display only the data specified in the query, so it shows only the data that is returned by the query defined during the creation of the view.
+
 
