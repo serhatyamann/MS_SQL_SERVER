@@ -1,5 +1,5 @@
 IF OBJECT_ID('view_Daily_Sales','V') IS NOT NULL
-	DROP VIEW view_Daily_Sales
+       DROP VIEW view_Daily_Sales
 GO
 
 CREATE VIEW view_Daily_Sales
