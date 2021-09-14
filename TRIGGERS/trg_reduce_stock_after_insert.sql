@@ -8,8 +8,8 @@ AFTER INSERT
 AS
 	DECLARE @productID INT
 	DECLARE @quantity INT
-	SELECT @productID=product_id, 
-		     @quantity=quantity 
+	SELECT @productID = product_id, 
+	       @quantity = quantity 
 	FROM INSERTED
 	UPDATE stocks 
 	SET quantity = quantity - @quantity 
