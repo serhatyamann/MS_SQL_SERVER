@@ -40,7 +40,7 @@ BEGIN
 	DECLARE @orderID INT
 	SELECT @orderID = @@IDENTITY
 
-	INSERT INTO order_items 
+	INSERT INTO order_details 
 				(order_id,
 				 product_id,
 				 quantity,
