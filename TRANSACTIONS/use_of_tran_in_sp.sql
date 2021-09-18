@@ -24,16 +24,16 @@ BEGIN
 				(customer_id,
 				 order_status,
 				 order_date,
-			     required_date,
+			     	 required_date,
 				 shipped_date,
 				 store_id,
 				 staff_id)
 	VALUES
 				(@customer_id,
 				 @order_status,
-			     @order_date,
-			     @required_date,
-			     @shipped_date,
+			    	 @order_date,
+			    	 @required_date,
+			   	 @shipped_date,
 				 @store_id,
 				 @staff_id)
 				 
@@ -64,7 +64,7 @@ BEGIN
 	END TRY
 	BEGIN CATCH 
 		PRINT 'ERROR WHILE PROCESSING ORDER'
-	--  If needed, you can see the error message with the code below
+	--  	If needed, you can see the error message with the code below
 	--	DECLARE @msg NVARCHAR(MAX)
 	--	set @msg = (SELECT ERROR_MESSAGE())
 	--	print @msg;
