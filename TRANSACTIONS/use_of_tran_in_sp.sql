@@ -65,9 +65,9 @@ BEGIN
 	BEGIN CATCH 
 		PRINT 'ERROR WHILE PROCESSING ORDER'
 	--  	If needed, you can see the error message with the code below
-	--	DECLARE @msg NVARCHAR(MAX)
-	--	set @msg = (SELECT ERROR_MESSAGE())
-	--	print @msg;
+	--	DECLARE @errMsg NVARCHAR(500)
+	--	set @errMsg = (SELECT ERROR_MESSAGE())
+	--	print @errMsg;
 		ROLLBACK TRANSACTION
 	END CATCH	
 END
