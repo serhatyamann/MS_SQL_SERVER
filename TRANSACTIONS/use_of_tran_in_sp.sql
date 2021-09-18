@@ -64,7 +64,7 @@ BEGIN
 	END TRY
 	BEGIN CATCH 
 		PRINT 'ERROR WHILE PROCESSING ORDER'
-	--  	If needed, you can see the error message with the code below
+	--  	If needed, you can print the error message with the code below
 	--	DECLARE @errMsg NVARCHAR(500)
 	--	set @errMsg = (SELECT ERROR_MESSAGE())
 	--	print @errMsg;
